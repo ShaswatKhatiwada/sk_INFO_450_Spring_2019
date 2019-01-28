@@ -37,6 +37,7 @@ while (1) {
 		}
 		else
 			cout << "Survey says.... IT IS THE PRIME NUMBER\n";
+	
 	}
 return 0;
 }
