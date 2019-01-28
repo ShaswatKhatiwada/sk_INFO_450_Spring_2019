@@ -12,28 +12,27 @@ The year is also evenly divisible by 400, then it is a leap year.
 #include <iostream>
 using namespace std;
 
-int main()
-{
-	int year;
 
-	cout << "Enter the year: ";
-	cin >> year;
-
-	if (year % 4 == 0)
+	int main()
 	{
-		if (year % 100 == 0)// not a leep
-		{
-			if (year % 400 == 0)// becasue its now divisible by 400 it is 
-				cout << " The year you entered is leap year: " << year;
-			else
-				cout << " The year you entered is NOT leap year: " << year;
-		}
-		else// not by 100 then yes leep
-			cout << " The year you entered is leap year: " << year;
-	}
-	else// is not 0
-		cout << " The year you entered is NOT leap year: " << year;
+		int year;
 
-	return 0;
-}
+		cout << "Enter the year: ";
+		cin >> year;
+
+		if ((year % 4 == 0) && year % 100 != 0)
+		{
+			cout << year << " is a leap year.";
+		}
+		else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0))
+		{
+			cout << year << " is a leap year.";
+		}
+		else
+		{
+			cout << year << " is not a leap year.";
+		}
+
+		return 0;
+	}
 
