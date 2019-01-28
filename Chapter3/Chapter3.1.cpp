@@ -8,8 +8,8 @@ using namespace std;
 int main() {
 	double n;
 	double j;
-	char again = 'Y';
-	while (again == 'y' || again == 'Y')  {
+	
+	while (1)  {
 		cout << "Please enter a value: " << endl;
 		cin >> n;
 
@@ -27,8 +27,7 @@ int main() {
 			cout << " Well you entered 0 to end the program" << endl;
 			return 0;
 		}
-		cout << "Would you like to enter other numbers? Y/N" << endl; 
-		cin >> again;
+		
 	}
 	return 0;
 }

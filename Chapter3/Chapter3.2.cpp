@@ -22,28 +22,22 @@ while (1) {
 		 
 
 	}
-	
 	for (i = 2; i < n; i++)
 	{
 		if (n%i == 0)
 		{
 			cout << "Survey says....You did NOT entered prime number, try again\n";
 			break;
-
 		}
-
 	}
 		if (n == 0)
 		{
 			cout << "You Entered 0 or a char to end the program\n";
 			exit(0);
-
-
 		}
 		else
 			cout << "Survey says.... IT IS THE PRIME NUMBER\n";
-	
-}
+	}
 return 0;
 }
 
