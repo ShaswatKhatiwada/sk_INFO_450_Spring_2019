@@ -9,11 +9,12 @@ Once read in, it calculates the mean and the standard deviation of the numbers t
 
 #include "pch.h"
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main()
 {
-	int num[10];
+	double num[10];
 	int i = 0;
 	double total = 0;
 	double newTotal = 0;
@@ -43,9 +44,9 @@ int main()
 	{
 		newTotal = newTotal + num[i];
 	}*/
-	cout << "\nThe new mean is: " << newTotal / 10;
-	cout << "\nThe square root of the mean is: " << sqrt(newTotal / 10);
-
+	std::cout << "\nThe new mean is: " << newTotal / 10;
+	std::cout << "\nThe square root of the mean is: " << sqrt(newTotal / 10);
+	
 	return 0;
 }
 
