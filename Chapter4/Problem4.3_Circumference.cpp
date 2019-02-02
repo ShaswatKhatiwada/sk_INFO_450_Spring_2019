@@ -25,9 +25,9 @@ int main() {
 
 double calculateCircumference(double radius)// not 100% here tho, should work fine
 {
-	double area;
+	double Circumference;
 	//double pi = 3.14;
-	area = 2 *pi * radius;
+	Circumference = 2 *pi * radius;
 
-	return area;
+	return Circumference;
 }
