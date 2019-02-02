@@ -15,13 +15,18 @@ int main()
 {
 	int num[10];
 	int i = 0;
+	double total = 0;
+	double newTotal = 0;
 	for (i = 0; i < 10; i++)
 	{
 		cout << "\nPlease enter an integer value: ";
 		cin >> num[i];
+		total = total + num[i];
+		num[i] = sqrt(num[i] - (total / 10));
+		newTotal = newTotal + num[i];
 	}
 	//find the mean
-	double total = 0;
+	/*double total = 0;
 	for (i = 0; i < 10; i++)
 	{
 		total = total + num[i];
@@ -37,7 +42,7 @@ int main()
 	for (i = 0; i < 10; i++)
 	{
 		newTotal = newTotal + num[i];
-	}
+	}*/
 	cout << "\nThe new mean is: " << newTotal / 10;
 	cout << "\nThe square root of the mean is: " << sqrt(newTotal / 10);
 
