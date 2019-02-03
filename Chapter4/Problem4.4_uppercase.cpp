@@ -27,9 +27,9 @@ int main() {
 	cout << "You have entered 0.  Exiting." << endl;
 }
 char  get_user_input() {
-	char user_input_letter;
-	cin >> user_input_letter;
-	return user_input_letter;
+	char get_user_input;
+	cin >> get_user_input;
+	return get_user_input;
 }
 void to_upper_case(char & user_input_letter) {
 	user_input_letter = toupper(user_input_letter);
