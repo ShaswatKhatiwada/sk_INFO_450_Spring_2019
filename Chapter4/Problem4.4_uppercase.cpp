@@ -32,12 +32,11 @@ int main() {
 char  get_user_input() {
 	char letter;
 	cin >> letter;
-
 	return letter;
 }
 void to_upper_case(char & letter) {
 	letter = toupper(letter);
-	cout << letter << endl;
+	return letter;
 }
 
 
