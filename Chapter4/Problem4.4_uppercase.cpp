@@ -22,18 +22,22 @@ int main() {
 		case 'D': cout << "Keep at it, you can get there." << endl; break;
 		case 'F': cout << "F is for #fail" << endl; break;
 		default: cout << "This is not a valid grade: " << user_input_letter << endl;
+			
 		}
+		
 	}
 	cout << "You have entered 0.  Exiting." << endl;
+	
 }
 char  get_user_input() {
-	char get_user_input;
-	cin >> get_user_input;
-	return get_user_input;
+	char letter;
+	cin >> letter;
+
+	return letter;
 }
-void to_upper_case(char & user_input_letter) {
-	user_input_letter = toupper(user_input_letter);
-	cout << user_input_letter << endl;
+void to_upper_case(char & letter) {
+	letter = toupper(letter);
+	cout << letter << endl;
 }
 
 
