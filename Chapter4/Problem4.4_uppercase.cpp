@@ -7,7 +7,6 @@
 using namespace std;
 using std::toupper;
 
-
 char  get_user_input();
 void to_upper_case(char &letter);
 int main() {
