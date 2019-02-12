@@ -12,27 +12,27 @@ Then outputs the class list to the console when the user enters an empty string 
 int main()
 {
 
-	std::string SName[5][6];
+	std::string StudentName[5][6];
 	std::string name = " ";
 	int i = 0, j = 0;
 	for (i = 0; i < 5; i++)
 	{
 		for (j = 0; j < 6; j++)
 		{
-			std::cout << "What is your name? ";
+			std::cout << "Enter your name: ";
 			getline(std::cin, name);
 			if (name.empty())
 			{
-				SName[i][j] = '\0';
+				StudentName[i][j] = '\0';
 				//print the names
 				int x, y;
 				for (x = 0; x < 5; x++)
 				{
 					for (y = 0; y < 6; y++)
 					{
-						if (!SName[x][y].empty())
+						if (!StudentName[x][y].empty())
 						{
-							std::cout << SName[x][y];
+							std::cout << StudentName[x][y];
 							std::cout << "\n";
 						}
 						else
@@ -45,21 +45,21 @@ int main()
 			}
 			else
 			{
-				SName[i][j] = name;
+				StudentName[i][j] = name;
 			}
 		}
 	}
 
 
-	//print the names
+/*	//print the names
 	int x = 0, y = 0;
 	for (x = 0; x < 5; x++)
 	{
 		for (y = 0; y < 6; y++)
 		{
-			if (!SName[x][y].empty())
+			if (!StudentName[x][y].empty())
 			{
-				std::cout << SName[x][y];
+				std::cout << StudentName[x][y];
 				std::cout << "\n";
 			}
 			else
@@ -69,3 +69,4 @@ int main()
 		}
 	}
 }
+*/
