@@ -1,0 +1,8 @@
+truck
+6
+6
+6
+automobile
+6
+6
+car
